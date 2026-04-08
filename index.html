@@ -3,191 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>안용호 과장보 | 금융 네트워크 인프라 전문가</title>
+    <title>코어네트워크팀 대외계 담당자 안용호 소개</title>
     <style>
-        :root {
-            --primary-blue: #007aff;
-            --dark-bg: #0a192f;
-            --card-bg: #112240;
-            --text-main: #ccd6f6;
-            --text-dim: #8892b0;
-            --accent-green: #64ffda;
-        }
+        :root { --dark-bg: #0f172a; --card-bg: #1e293b; --accent-blue: #38bdf8; --text-gray: #94a3b8; }
+        body { font-family: 'Pretendard', sans-serif; background: var(--dark-bg); color: white; margin: 0; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* 슬라이드 섹션 공통 */
+        section { background: var(--card-bg); border-radius: 15px; padding: 30px; margin-bottom: 40px; border: 1px solid rgba(255,255,255,0.1); }
+        .slide-title { font-size: 2rem; margin-bottom: 10px; color: white; font-weight: bold; }
+        .slide-sub { font-size: 1.1rem; color: var(--accent-blue); margin-bottom: 30px; }
+        
+        /* 그리드 레이아웃 */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .stat-card { background: rgba(15, 23, 42, 0.5); padding: 20px; border-radius: 12px; text-align: center; border: 1px solid rgba(56, 189, 248, 0.2); }
+        .stat-card h3 { font-size: 2.5rem; color: var(--accent-blue); margin: 0; }
+        .stat-card p { color: var(--text-gray); margin-top: 10px; }
 
-        body {
-            margin: 0;
-            font-family: 'Pretendard', sans-serif;
-            background-color: var(--dark-bg);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
+        /* 이미지 박스 */
+        .img-box { width: 100%; background: #000; border-radius: 10px; margin: 20px 0; overflow: hidden; border: 2px solid #334155; position: relative; }
+        .img-box img { width: 100%; display: block; }
+        .img-label { position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; }
 
-        /* Hero 섹션 */
-        header {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: radial-gradient(circle at center, #112240 0%, #0a192f 100%);
-            padding: 0 20px;
-        }
-
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 4px solid var(--primary-blue);
-            margin-bottom: 20px;
-            box-shadow: 0 0 20px rgba(0, 122, 255, 0.3);
-        }
-
-        h1 { font-size: 3rem; margin: 10px 0; color: white; }
-        .title { font-size: 1.5rem; color: var(--primary-blue); font-weight: bold; }
-        .intro { max-width: 600px; color: var(--text-dim); margin-top: 15px; }
-
-        /* 핵심 역량 카드 */
-        .stats-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            width: 80%;
-            max-width: 1000px;
-            margin-top: 50px;
-        }
-
-        .stat-box {
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: 12px;
-            border-bottom: 3px solid var(--primary-blue);
-        }
-
-        .stat-val { font-size: 2.5rem; font-weight: bold; color: var(--accent-green); display: block; }
-        .stat-label { font-size: 0.9rem; color: var(--text-dim); }
-
-        /* 섹션 공통 스타일 */
-        section { padding: 100px 10% 50px; }
-        h2 { border-left: 5px solid var(--primary-blue); padding-left: 15px; margin-bottom: 40px; }
-
-        /* 전문 분야 & 프로젝트 */
-        .grid-layout {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .info-card {
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: 15px;
-            transition: transform 0.3s ease;
-        }
-
-        .info-card:hover { transform: translateY(-10px); }
-        .info-card h3 { color: var(--accent-green); margin-top: 0; }
-        .tag { display: inline-block; background: rgba(0, 122, 255, 0.1); color: var(--primary-blue); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; margin: 5px; }
-
-        /* 글로벌 네트워크 지도 스타일링 */
-        .global-map {
-            background: linear-gradient(rgba(17, 34, 64, 0.8), rgba(17, 34, 64, 0.8)), url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?auto=format&fit=crop&w=1000&q=80');
-            background-size: cover;
-            border-radius: 20px;
-            padding: 60px;
-            text-align: center;
-        }
-
-        footer { text-align: center; padding: 50px; color: var(--text-dim); font-size: 0.8rem; }
+        /* 리스트 스타일 */
+        .work-list { list-style: none; padding: 0; }
+        .work-list li { margin-bottom: 15px; padding-left: 25px; position: relative; }
+        .work-list li::before { content: '✔'; position: absolute; left: 0; color: var(--accent-blue); }
+        
+        .tag-group { display: flex; gap: 10px; margin-top: 15px; }
+        .tag { background: #334155; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; color: var(--accent-blue); }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="profile-img" style="background: url('https://img.freepik.com/free-vector/modern-professional-profile-icon_1017-43187.jpg') center/cover;"></div>
-        <div class="title">금융 네트워크 인프라 전문가 [cite: 10]</div>
-        <h1>안용호 <span style="font-size: 1.5rem; color: var(--text-dim);">과장보</span></h1>
-        <p class="intro">코어네트워크팀 대외계 파트 소속으로, 6,500개 이상의 금융 영업점 및 200여 개 대외 기관과의 안정적인 네트워크 연계와 운영을 책임지고 있습니다[cite: 10, 11, 13].</p>
-
-        <div class="stats-container">
-            <div class="stat-box">
-                <span class="stat-val">10+</span>
-                <span class="stat-label">년 경력 [cite: 10]</span>
+<div class="container">
+    <section id="slide1">
+        <div class="slide-title">코어네트워크팀 대외계 담당자 소개</div>
+        <div class="slide-sub">금융 네트워크 인프라 운영 및 대외 연계 전문</div>
+        
+        <div class="grid">
+            <div class="stat-card">
+                <h3>5년</h3>
+                <p>경력 기간</p>
             </div>
-            <div class="stat-box">
-                <span class="stat-val">500+</span>
-                <span class="stat-label">관리 장비 [cite: 10]</span>
+            <div class="stat-card">
+                <h3>6500+</h3>
+                <p>은행/농축협 영업점 관리</p>
             </div>
-            <div class="stat-box">
-                <span class="stat-val">99.9%</span>
-                <span class="stat-label">네트워크 가용성 [cite: 10]</span>
+            <div class="stat-card">
+                <h3>7개</h3>
+                <p>뉴욕지점 등 해외 사무소</p>
             </div>
-            <div class="stat-box">
-                <span class="stat-val">6500+</span>
-                <span class="stat-label">전국 지점 관리 [cite: 11]</span>
+            <div class="stat-card">
+                <h3>200+</h3>
+                <p>금융결제원 등 기관 연계</p>
             </div>
         </div>
-    </header>
 
-    <section>
-        <h2>핵심 업무 및 전문성 [cite: 10]</h2>
-        <div class="grid-layout">
-            <div class="info-card">
-                <h3>인프라 안정성 관리</h3>
-                <p>전국 영업점 및 사무소 최적화 회선 구성 [cite: 15]</p>
-                <p>NMS 시스템을 통한 24시간 무중단 모니터링 [cite: 15]</p>
-                <div class="tag">전용회선</div> <div class="tag">Router/Switch</div> <div class="tag">가용성 보장</div>
+        <div class="img-box">
+            <span class="img-label">안용호 과장보 프로필 사진</span>
+            <img src="profile.jpg" alt="안용호 과장보 프로필">
+        </div>
+
+        <div class="tag-group">
+            <span class="tag">● 전용회선</span>
+            <span class="tag">● VPN</span>
+            <span class="tag">● 글로벌인프라</span>
+            <span class="tag">● 대외기관연계</span>
+        </div>
+    </section>
+
+    <section id="slide2">
+        <div class="slide-title">전국 영업점 네트워크 인프라 운영</div>
+        <div class="slide-sub">네트워크 가용성 99.9% 보장</div>
+
+        <div class="grid">
+            <div class="stat-card" style="text-align: left;">
+                <h4>전용회선 관리</h4>
+                <p>전국 영업점/사무소 최적화 회선 구성</p>
+                <small style="color:#10b981">● 정상 운영중</small>
             </div>
-            <div class="info-card">
-                <h3>대외기관 연계 및 보안</h3>
-                <p>금융결제원, 한국은행 등 핵심 대외기관 연계 전용선 운영 [cite: 13, 17]</p>
-                <p>VPN 기반의 안전한 데이터 통신 환경 구축 (IPsec, SSL, AES-256) [cite: 17]</p>
-                <div class="tag">VPN 터널링</div> <div class="tag">보안 통신</div> <div class="tag">대외계 파트</div>
+            <div class="stat-card" style="text-align: left;">
+                <h4>장비 운영</h4>
+                <p>라우터/스위치 고가용성 통신 장비</p>
+                <small style="color:#10b981">● 24/7 모니터링</small>
             </div>
-            <div class="info-card">
-                <h3>데이터센터 연동</h3>
-                <p>의왕/안성 백본망 무중단 연결 및 관리 [cite: 15]</p>
-                <p>영업점~데이터센터~대외기관 End-to-End 통합 관리 [cite: 18]</p>
-                <div class="tag">백본망</div> <div class="tag">통합 운영 매트릭스</div>
+            <div class="stat-card" style="text-align: left;">
+                <h4>데이터센터 연동</h4>
+                <p>의왕/안성 백본망 무중단 연결</p>
+                <small style="color:#10b981">● 연결 완료</small>
+            </div>
+        </div>
+
+        <div class="img-box">
+            <span class="img-label">네트워크 연결 구조도 (영업점-전용회선-데이터센터)</span>
+            <img src="network_map.jpg" alt="네트워크 연결 구조">
+        </div>
+        <p>※ NMS 시스템 운영을 통한 24시간 모니터링 수행</p>
+    </section>
+
+    <section id="slide3">
+        <div class="slide-title">글로벌 네트워크 구축 및 운영</div>
+        <div class="slide-sub">국가별 현지 통신 환경을 고려한 인프라 구축</div>
+
+        <div class="grid">
+            <div class="stat-card">
+                <h3>7개</h3>
+                <p>해외 지점 연결</p>
+            </div>
+            <div class="stat-card">
+                <h3>99.9%</h3>
+                <p>글로벌 가용성</p>
+            </div>
+        </div>
+
+        <div class="img-box">
+            <span class="img-label">GLOBAL NETWORK: 7 OPERATIONAL INTERNATIONAL BRANCHES (세계 지도)</span>
+            <img src="world_map.jpg" alt="글로벌 네트워크 지도">
+        </div>
+
+        <div class="content-box" style="background: rgba(56, 189, 248, 0.1); padding: 20px; border-radius: 10px;">
+            <h4>실무 경험 - 베트남 하노이 지점 구축</h4>
+            <p>● <b>2024.03 구축 완료:</b> 현지 통신 환경을 고려한 최적화된 네트워크 설계</p>
+            <div class="grid" style="margin-top:10px;">
+                <img src="hanoi_rack.jpg" alt="하노이 지점 랙 장비" style="width:100%; border-radius:5px;">
+                <img src="hanoi_team.jpg" alt="하노이 현지 기술 지원" style="width:100%; border-radius:5px;">
             </div>
         </div>
     </section>
 
-    <section>
-        <h2>글로벌 네트워크 구축 성과 [cite: 16]</h2>
-        <div class="global-map">
-            <h3 style="color: white; font-size: 2rem;">7 Operational International Branches</h3>
-            <p style="color: var(--accent-green); font-weight: bold;">뉴욕, 런던, 하노이, 베이징, 홍콩, 노이다, 시드니 지점 인프라 구축 및 지원 </p>
-            <div style="margin-top: 30px;">
-                <span class="tag">하노이 지점 구축 (2024.03) [cite: 16]</span>
-                <span class="tag">현지 기술 지원</span>
-                <span class="tag">국가별 인프라 최적화 설계</span>
-            </div>
+    <section id="slide4">
+        <div class="slide-title">대외기관 시스템 연계 및 보안 통신</div>
+        <div class="slide-sub">금융결제원 등 핵심 대외기관 전용선 운영 및 VPN 보안</div>
+
+        <ul class="work-list">
+            <li><b>외부 기관 연계:</b> 금융결제원 등 핵심 대외기관 전용선 운영</li>
+            <li><b>보안 터널링:</b> VPN 기반의 안전한 데이터 통신 환경 구성</li>
+            <li><b>엔드포인트 관리:</b> 내부 서버 ↔ 대외 서버 간 안정적 데이터 흐름 확보</li>
+        </ul>
+
+        <div class="img-box">
+            <span class="img-label">농협은행 중심의 금융 네트워크 연결도 (한국은행, 금융결제원 등)</span>
+            <img src="finance_map.jpg" alt="금융 네트워크 연결도">
+        </div>
+
+        <div class="tag-group">
+            <span class="tag">SSL</span><span class="tag">IPsec</span><span class="tag">AES-256</span><span class="tag">RSA-2048</span>
         </div>
     </section>
 
-    <section>
-        <h2>주요 프로젝트 [cite: 10, 16]</h2>
-        <div class="grid-layout">
-            <div class="info-card">
-                <h3>전국 영업점 인프라 운영</h3>
-                <p>전국 500+ 지점(PPT 기준) 및 농축협 6,500+ 지점의 대규모 네트워크 인프라 유지보수 </p>
-            </div>
-            <div class="info-card">
-                <h3>대외기관 연계 통합 허브</h3>
-                <p>금융결제원 등 200+ 개 대외 기관 연계 및 암호화 통신 적용 [cite: 13]</p>
-            </div>
-            <div class="info-card">
-                <h3>베트남 하노이 지점 구축</h3>
-                <p>현지 통신 환경을 고려한 최적화 네트워크 설계 및 트러블슈팅 완료 (2024.03) [cite: 16]</p>
-            </div>
+    <section id="slide5">
+        <div class="slide-title">금융 네트워크 통합 운영 및 대외 연결 허브</div>
+        <p>"전국 · 글로벌 · 대외기관을 연결하는 금융 네트워크 허브 역할 수행"</p>
+
+        <div class="grid">
+            <div class="stat-card"><h4>영업점 지원</h4><p>전국망 안정성 및 품질 유지</p></div>
+            <div class="stat-card"><h4>글로벌 확장</h4><p>해외 거점 구축 및 운영 지원</p></div>
+            <div class="stat-card"><h4>대외 보안</h4><p>외부기관 연계 및 데이터 암호화</p></div>
+            <div class="stat-card"><h4>통합 관리</h4><p>End-to-End 관리 체계</p></div>
+        </div>
+
+        <div class="img-box">
+            <span class="img-label">대한민국 금융 네트워크 다리 (NH본점 중심의 통합 비주얼)</span>
+            <img src="bridge_concept.jpg" alt="금융 네트워크 허브 개념도">
         </div>
     </section>
-
-    <footer>
-        <p>Copyright © 2026 안용호. All Rights Reserved.</p>
-        <p>금융 네트워크 인프라 운영 및 대외 연계 전문 | 코어네트워크팀 대외계 파트 [cite: 10]</p>
-    </footer>
+</div>
 
 </body>
 </html>
